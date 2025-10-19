@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+
+    font-family: 'Inter';
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color: #080808;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(0.7rem);
+    z-index: 999;
+}
+
+header img {
+    width: 8%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-right: 25rem;
+}
+
+nav {
+    width: auto;
+    height: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    margin-left: 1.4rem;
+
+    font-size: 1.5rem;
+    color: rgb(156, 156, 156);
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.imagem-apresentacao {
+    width: 100%;
+    height: 35rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: red;
+
+    margin-top: 6rem;
+}
+
+.imagem-apresentacao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Inter';
+    font-size: 2rem;
+
+    margin: 5rem;
+}
+
+.center {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mockup-loja {
+    width: 18rem;
+    height: 25rem;
+
+    margin-left: 1rem;
+    transition: all 0.2s ease;
+
+    border: solid 0.2rem white;
+    border-radius: 0.2rem;
+}
+
+.mockup-loja:hover {
+    transform: translateY(-0.5rem);
+}
+
+.produto {
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: blue;
+}
+
+.produto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.title-produto {
+    color: white;
+    font-family: 'Inter';
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.price-produto {
+    color: #F2CE1B;
+    font-family: 'Inter';
+    margin-left: 1rem;
+}
+
+#btn-loja {
+    width: 9rem;
+    height: 3rem;
+    position: absolute;
+
+    cursor: pointer;
+    border-radius: 0.2rem;
+
+    transition: all 0.2s ease;
+
+
+    bottom: 22rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #F2CE1B;
+}
+
+#btn-loja:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.7rem 0.1rem #08080867;
+}
+
+.artistas {
+    width: 50%;
+    height: 60rem;
+
+    margin: auto;
+}
+
+.artistas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.linkdozap {
+    width: 100%;
+    height: auto;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.descricao {
+    width: 25rem;
+    height: 15rem;
+    color: white;
+}
+
+.descricao p {
+    width: 80%;
+    margin-left: 1rem;
+}
+
+#leftimg {
+    width: 25rem;
+    height: 15rem;
+
+
+    border: solid 0.3rem white;
+    border-radius: 0.1rem;
+}
+
+.um{
+    margin-left: 0.5rem;
+}
+
+#title-artist {
+    font-size: 2.4rem;
+    margin: 0;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+.socialmidias {
+    width: 100%;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.socialmidias img {
+    width: auto;
+    height: 2rem;
+
+    margin-left: 1rem;
+
+}
+
+
+
+
+
+.loja-container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
+    gap: 20px;
+    padding: 20px;
+
+    margin: auto;
+    margin-top: 6rem;
+
+}
+
+.menu-item.ativo {
+    color: #F2CE1B;
+    text-shadow: 0 0 0.3rem #f2ce1ba1;
+}
+
+.produtos {
+    width: 22.455rem;
+    height: 28.0625rem;
+    border: solid 0.2rem white;
+    border-radius: 0.2rem;
+    text-align: center;
+    transition: transform 0.2s;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.produtos p {
+    color: #F2CE1B;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.produtos:hover {
+    transform: scale(1.03);
+}
+
+.produtos img {
+    width: 22.455rem;
+    height: 22.455rem;
+    object-fit: cover;
+
+}
+
+.descricao_porduto {
+    width: 22.455rem;
+    height: auto;
+
+    text-align: left;
+
+}
+
+.categoria-produto {
+    font-size: 0.75rem;
+
+    margin-bottom: -0.3rem;
+    margin-left: 1rem;
+}
+
+.nome-produto {
+    font-size: 1rem;
+    margin-bottom: -0.46rem;
+    margin-left: 1rem;
+}
+
+.valor-produto {
+    font-size: 0.84rem;
+    margin-bottom: -0.42rem;
+    margin-left: 1rem;
+}
+
+.contato-layout {
+    width: 60%;
+    height: 30rem;
+
+    margin-top: 10rem;
+
+    background-color: red;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas fixas */
+    gap: 24px;
+    padding: 40px;
+
+    width: 80%;
+
+    margin: auto;
+}
+
+.categoria-card {
+    background: #111;
+    border: 2px solid #8D68A6;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+}
+
+.categoria-card h2 {
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    color: #8D68A6;
+    border-bottom: 1px solid #8D68A6;
+    padding-bottom: 6px;
+}
+
+.categoria-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categoria-card li {
+    margin-bottom: 8px;
+}
+
+.categoria-card a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.categoria-card a:hover {
+    color: #F2CE1B;
+}
+
+.separ {
+    margin-top: 8rem;
+}
+
+.contato-container {
+  max-width: 700px;
+  border: 2px solid #8D68A6;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #8D68A6;
+margin: auto;
+  margin-top: 10rem;
+}
+
+.contato-container h1 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  
+  text-shadow: 0 0 0.5rem #8d68a6af;
+  margin: 3rem;
+}
+
+.contato-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
+}
+
+.contato-box p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: white;
+  text-align: center;
+}
+
+.info-contato p {
+  margin: 10px 0;
+}
+
+.info-contato a {
+  color: #F2CE1B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-contato a:hover {
+  text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    height: 12rem;
+}
